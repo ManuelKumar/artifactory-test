@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>How to consume RESTful Web Service using jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+		<script>
+		
+		$(document).ready(function () {
+			
+		    $.ajax({
+		        url: "http://localhost:8888/student/1",
+		        success: function (data) {
+		            $("#rollNo").append(data.rollNo);
+
+		            $("#name").append(data.name);
+
+		        },
+		        error: function (xhr, ajaxOptions, thrownError) {
+		            alert(xhr.responseText + "\n" + xhr.status + "\n" + thrownError);
+		        }
+		    });
+
+		});		
+		
+		</script>        
+    </head>
+    <body>
+        <div>
+            <h3>How to consume RESTful Web Service using jQuery</h3>
+
+            <p id="rollNo">Roll No: </p>
+            <p id="name">Name: </p>
+
+        </div>
+    </body>
+</html>
