@@ -33,8 +33,8 @@ public class StudentService {
 		}
 	}
 
-	public Hashtable<String, Student> findAll() {
+	/*public Hashtable<String, Student> findAll() {
 		return ht;
-	}
+	}*/
 
 }
