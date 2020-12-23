@@ -47,16 +47,19 @@
 	</build>
 	
 	<distributionManagement>
-	<repository>	
-          <id>central</id>
-          <name>libs-release</name>
-          <url>http://localhost:8081/artifactory/libs-release</url>
-        </repository>		
+
+	    <repository>
+		<id>central</id>
+		<name>Prasanth-PC-releases</name>
+		<url>http://localhost:8081/artifactory/libs-release</url>
+	    </repository>
+	
 	    <snapshotRepository>
 		<id>snapshots</id>
 		<name>Prasanth-PC-snapshots</name>
 		<url>http://localhost:8081/artifactory/libs-snapshot</url>
 	    </snapshotRepository>
+		
 	</distributionManagement>
 
 </project>
