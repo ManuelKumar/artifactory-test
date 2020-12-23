@@ -22,10 +22,10 @@ public class StudentController {
 		return studentService.findByRollNo(rollNo);
 	}
 
-	@RequestMapping("/all")
+	/*@RequestMapping("/all")
 	public Hashtable<String, Student> getAll() {
 		return studentService.findAll();
-	}
+	}*/
 	
 	@RequestMapping("/test")
 	public RedirectView localRedirect() {
