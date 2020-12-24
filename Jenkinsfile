@@ -23,7 +23,7 @@ pipeline{
     stage ("deploy") {
       steps {
         echo  'This is deploy !!!!!! '
-        echo  "This is deploy !!!!!! {VERSION}"
+        echo  "This is deploy !!!!!! ${VERSION}"
       }
     }     
   }
